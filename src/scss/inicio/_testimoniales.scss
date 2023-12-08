@@ -1,0 +1,24 @@
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nuestros-testimoniales{
+    background-color: v.$blanco;
+    padding: 10rem 2rem;
+    margin-top: -10rem;
+}
+.testimonial{
+    font-family: v.$fuente_secundaria;
+    max-width: 50rem;
+    padding: 2rem 4rem;
+    background-color: v.$cafeClaro;
+    border-radius: 2rem;
+    margin: 0 auto;
+
+    .autor{
+        text-align: right;
+        font-size: 2.4rem;
+        color: v.$primario;
+        font-family: v.$fuente_cursiva;
+    }
+}

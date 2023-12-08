@@ -1,0 +1,12 @@
+
+@use 'base/variables' as v;
+
+.centrar-texto{
+    text-align: center;
+}
+.bg-primario{
+    background-color: v.$primario;
+}
+.pb-0{
+    padding-bottom: 0;
+}

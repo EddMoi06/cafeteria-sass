@@ -1,0 +1,50 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer{
+    background-color: v.$primario;
+}
+.contenido-footer{
+    background-color: v.$blanco;
+    padding: 5rem 2rem;
+    @include m.desktop {
+        display: flex;
+        justify-content: space-around;
+        padding: 5rem;
+    }
+    h3{
+        margin: 0;
+        font-size: 2.5rem;
+        font-family: v.$fuente_cursiva;
+        color: v.$secundario;
+    }
+    p{
+        text-align: center;
+        font-weight: 700;
+    }
+    a{
+        color: v.$negro;
+        font-weight: 700;
+    }
+}
+.footer-box{
+    margin-top: 5rem;
+    &:nth-child(1){
+        margin: 0;
+    }
+    @include m.desktop {
+        margin: 0;
+    }
+}
+.reservacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.copyright{
+    text-align: center;
+    padding: 1rem;
+    color: v.$blanco;
+    margin: 0;
+    font-size: 2rem;
+}
